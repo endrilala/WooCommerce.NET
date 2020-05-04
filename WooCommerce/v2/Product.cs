@@ -393,6 +393,12 @@ namespace WooCommerceNET.WooCommerce.v2
         public List<ProductCategoryLine> categories { get; set; }
 
         /// <summary>
+        /// List of brands. See Product - Brands -> plugin
+        /// </summary>
+        [DataMember(EmitDefaultValue = false)]
+
+        public List<ProductCategoryLine> brands { get; set; }
+        /// <summary>
         /// List of tags. See Product - Tags properties
         /// </summary>
         [DataMember(EmitDefaultValue = false)]

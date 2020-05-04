@@ -1,0 +1,15 @@
+
+obj/project.assets.json
+obj/Debug/netstandard2.0/WooCommerce.NET.csprojAssemblyReference.cache
+obj/Debug/netstandard2.0/WooCommerce.NET.assets.cache
+obj/Debug/netstandard2.0/WooCommerce.NET.AssemblyInfoInputs.cache
+obj/Debug/netstandard2.0/WooCommerce.NET.AssemblyInfo.cs
+.vs/WooCommerce.NET/v16/Server/sqlite3/storage.ide-wal
+.vs/WooCommerce.NET/v16/Server/sqlite3/storage.ide-shm
+.vs/WooCommerce.NET/v16/Server/sqlite3/storage.ide
+.vs/WooCommerce.NET/v16/Server/sqlite3/db.lock
+.vs/WooCommerce.NET/v16/.suo
+obj/WooCommerce.NET.csproj.nuget.cache
+obj/WooCommerce.NET.csproj.nuget.dgspec.json
+obj/WooCommerce.NET.csproj.nuget.g.props
+obj/WooCommerce.NET.csproj.nuget.g.targets
