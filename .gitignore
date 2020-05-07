@@ -13,3 +13,13 @@ obj/WooCommerce.NET.csproj.nuget.cache
 obj/WooCommerce.NET.csproj.nuget.dgspec.json
 obj/WooCommerce.NET.csproj.nuget.g.props
 obj/WooCommerce.NET.csproj.nuget.g.targets
+obj/Debug/WooCommerceNET.0.8.2.nuspec
+obj/Debug/netstandard2.0/WooCommerce.NET.pdb
+obj/Debug/netstandard2.0/WooCommerce.NET.dll
+obj/Debug/netstandard2.0/WooCommerce.NET.csproj.FileListAbsolute.txt
+bin/Debug/WooCommerceNET.0.8.2.nupkg
+bin/Debug/netstandard2.0/WooCommerce.NET.pdb
+bin/Debug/netstandard2.0/WooCommerce.NET.dll
+bin/Debug/netstandard2.0/WooCommerce.NET.deps.json
+wcsignkey.pfx
+.vs/WooCommerce.NET/DesignTimeBuild/.dtbcache

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using WooCommerce.NET.WooCommerce.v3;
 using WooCommerceNET.Base;
 
 namespace WooCommerceNET.WooCommerce.v3
@@ -393,6 +394,12 @@ namespace WooCommerceNET.WooCommerce.v3
         public List<ProductCategoryLine> categories { get; set; }
 
         /// <summary>
+        /// List of brands. See Brands plugin
+        /// </summary>
+        [DataMember(EmitDefaultValue = false)]
+        public List<Brand> brands { get; set; }
+
+        /// <summary>
         /// List of tags. See Product - Tags properties
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
@@ -453,10 +460,20 @@ namespace WooCommerceNET.WooCommerce.v3
     [DataContract]
     public class ProductCategoryLine : v2.ProductCategoryLine { }
     
-    //add Brand DataContract
     [DataContract]
-    public class Brand
+    public class ProductTagLine : v2.ProductTagLine { }
+
+    [DataContract]
+    public class Brand : JsonObject
     {
+        public static string Endpoint { get { return "brands"; } }
+
+        /// <summary>
+        /// term ID.
+        /// </summary>
+        [DataMember(EmitDefaultValue = false)]
+        public int? id { get; set; }
+
         /// <summary>
         /// term ID.
         /// </summary>
@@ -479,9 +496,6 @@ namespace WooCommerceNET.WooCommerce.v3
 
     }
 
-    [DataContract]
-    public class ProductTagLine : v2.ProductTagLine { }
-    
     [DataContract]
     public class ProductImage
     {

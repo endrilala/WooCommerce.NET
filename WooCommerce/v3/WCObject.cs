@@ -6,11 +6,12 @@ using WooCommerceNET.Base;
 
 namespace WooCommerceNET.WooCommerce.v3
 {
-    public class WCObject<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16>
+    public class WCObject<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17>
         where T1 : Coupon where T2 : Customer where T3 : Product where T4 : ProductReview where T5 : Variation
         where T6 : Order where T7 : OrderNote where T8 : OrderRefund where T9 : ProductAttribute
         where T10 : ProductAttributeTerm where T11 : ProductCategory where T12 : ShippingClass 
         where T13 : ProductTag where T14 : TaxRate where T15 : TaxClass where T16 : Data
+        where T17 : Brand
     {
        
         protected RestAPI API { get; set; }
@@ -54,6 +55,8 @@ namespace WooCommerceNET.WooCommerce.v3
             Setting = new WCItem<Setting>(api);
             Data = new WCItem<Data>(api);
             Plugin = new WCItem<Plugins>(api);
+
+            Brand = new WCItem<T17>(api);
         }
 
         public WCItem<T1> Coupon { get; protected set; }
@@ -69,6 +72,8 @@ namespace WooCommerceNET.WooCommerce.v3
         public WCAttributeItem Attribute { get; protected set; }
 
         public WCItem<T11> Category { get; protected set; }
+
+        public WCItem<T17> Brand { get; protected set; }
 
         public WCItem<T12> ShippingClass { get; protected set; }
 
@@ -156,7 +161,7 @@ namespace WooCommerceNET.WooCommerce.v3
     }
 
     public class WCObject: WCObject<Coupon, Customer, Product, ProductReview, Variation, Order, OrderNote, OrderRefund, ProductAttribute, ProductAttributeTerm, 
-                                    ProductCategory, ShippingClass, ProductTag, TaxRate, TaxClass, Data>
+                                    ProductCategory, ShippingClass, ProductTag, TaxRate, TaxClass, Data, Brand>
     {
         public WCObject(RestAPI api) : base(api)
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using WooCommerceNET.Base;
+using WooCommerceNET.WooCommerce.v3;
 
 namespace WooCommerceNET.WooCommerce.v2
 {
@@ -396,8 +397,8 @@ namespace WooCommerceNET.WooCommerce.v2
         /// List of brands. See Product - Brands -> plugin
         /// </summary>
         [DataMember(EmitDefaultValue = false)]
+        public List<Brand> brands { get; set; }
 
-        public List<ProductCategoryLine> brands { get; set; }
         /// <summary>
         /// List of tags. See Product - Tags properties
         /// </summary>
